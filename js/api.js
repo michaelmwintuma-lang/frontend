@@ -1,6 +1,8 @@
 // API functions for backend communication
 const API_BASE = "http://localhost:4000/api";
 
+const APU_URL = "https://backend-52bb.onrender.com/api";
+
 // helper to handle json responses and errors
 async function handleJSONResponse(res){
   const data = await res.json().catch(()=>({}));
